@@ -10,8 +10,8 @@ let mapleader=","
 
 
 " vimrc editing
-" Open .vimrc using ,ev
-nmap <silent> <leader>ev :e $MYVIMRC<CR>
+" Open .vimrc using ,ev in a new tab
+nmap <silent> <leader>ev :tabnew $MYVIMRC<CR>
 autocmd! bufwritepost .vimrc source %
 
 
@@ -40,7 +40,7 @@ map <C-l> <C-w>l
 " Tab navigation
 map <leader>n <esc>:tabprevious<CR>
 map <leader>m <esc>:tabnext<CR>
-map <leader>tn <esc>:tabnew<CR>
+map <leader>tn <esc>:tabnew
 " Undo
 noremap <C-z> :undo<CR>
 vnoremap <C-z> :undo<CR>
@@ -139,8 +139,8 @@ let g:pymode_lint_checker = "pyflakes,pep8"
 " Auto check on save
 let g:pymode_lint_write = 1
 
-" Support virtualenv
-let g:pymode_virtualenv = 1
+" Support virtualenv (using virtualenv plugin)
+let g:pymode_virtualenv = 0
 
 " Enable breakpoints plugin
 let g:pymode_breakpoint = 1
