@@ -1,0 +1,6 @@
+setup_vim.sh
+.vim/bundle/
+.vim/autoload/
+.vim/colors/
+.vim/.netrwhist
+.viminfo
