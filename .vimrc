@@ -123,3 +123,6 @@ let g:pymode_doc_bind = '<C-S-d>'
 let g:pymode_run_bind = '<C-S-e>'
 let g:pymode_folding = 0
 let g:pymode_motion = 1
+
+" NERDtree
+map <leader>t :NERDTreeToggle<CR>
