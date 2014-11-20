@@ -117,12 +117,43 @@ set wildignore+=*/coverage/*
 
 
 " Pymode
-let g:pymode_python = 'python'
-let g:pymode_rope_goto_definition_bind = '<C-S-g>'
-let g:pymode_doc_bind = '<C-S-d>'
-let g:pymode_run_bind = '<C-S-e>'
+" Adapted from: http://unlogic.co.uk/2013/02/08/vim-as-a-python-ide/#python-mode
+" Python-mode
+" Activate rope
+" Keys:
+" <Ctrl-c>f     Rope find occurrences
+" <Leader>b     Set, unset breakpoint (g:pymode_breakpoint enabled)
+" [[            Jump on previous class or function (normal, visual, operator modes)
+" ]]            Jump on next class or function (normal, visual, operator modes)
+" [M            Jump on previous class or method (normal, visual, operator modes)
+" ]M            Jump on next class or method (normal, visual, operator modes)
+let g:pymode_rope = 1
+let g:pymode_rope_completion = 0
+
+" Documentation (using Jedi)
+let g:pymode_doc = 0
+
+" Linting
+let g:pymode_lint = 1
+let g:pymode_lint_checker = "pyflakes,pep8"
+" Auto check on save
+let g:pymode_lint_write = 1
+
+" Support virtualenv
+let g:pymode_virtualenv = 1
+
+" Enable breakpoints plugin
+let g:pymode_breakpoint = 1
+let g:pymode_breakpoint_key = '<leader>b'
+
+" syntax highlighting
+let g:pymode_syntax = 1
+let g:pymode_syntax_all = 1
+let g:pymode_syntax_indent_errors = g:pymode_syntax_all
+let g:pymode_syntax_space_errors = g:pymode_syntax_all
+
+" Don't autofold code
 let g:pymode_folding = 0
-let g:pymode_motion = 1
 
 " NERDtree
 map <leader>t :NERDTreeToggle<CR>
