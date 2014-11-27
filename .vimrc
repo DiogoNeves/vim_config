@@ -38,9 +38,9 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 " Tab navigation
-map <leader>n <esc>:tabprevious<CR>
-map <leader>m <esc>:tabnext<CR>
-map <leader>tn <esc>:tabnew
+map <leader>, <esc>:tabprevious<CR>
+map <leader>. <esc>:tabnext<CR>
+map <leader>tn <esc>:tabnew<SPACE>
 " Undo
 noremap <C-z> :undo<CR>
 vnoremap <C-z> :undo<CR>
