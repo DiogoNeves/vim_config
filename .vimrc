@@ -12,7 +12,7 @@ let mapleader=","
 " vimrc editing
 " Open .vimrc using ,ev in a new tab
 nmap <silent> <leader>ev :tabnew $MYVIMRC<CR>
-autocmd! bufwritepost .vimrc source %
+autocmd! bufwritepost .vimrc nested source %
 
 
 " Vim plugin loader
@@ -110,6 +110,7 @@ let g:Powerline_symbols = 'fancy'
 
 
 " Ctrlp
+map <C-c-b> <esc>:CtrlPBuffer<CR>
 let g:ctrlp_max_height = 30
 set wildignore+=*.pyc
 set wildignore+=*_build/*
