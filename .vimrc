@@ -38,13 +38,13 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 " Tab navigation
-map <leader>, <esc>:tabprevious<CR>
-map <leader>. <esc>:tabnext<CR>
-map <leader>tn <esc>:tabnew<SPACE>
+map <leader>, <ESC>:tabprevious<CR>
+map <leader>. <ESC>:tabnext<CR>
+map <leader>tn <ESC>:tabnew<SPACE>
 " Undo
 noremap <C-z> :undo<CR>
-vnoremap <C-z> :undo<CR>
-inoremap <C-z> :undo<CR>
+vnoremap <C-z> <ESC>:undo<CR>
+inoremap <C-z> <ESC>:undo<CR>
 " Ident without losing selection
 vnoremap < <gv
 vnoremap > >gv
@@ -110,7 +110,7 @@ let g:Powerline_symbols = 'fancy'
 
 
 " Ctrlp
-map <C-c-b> <esc>:CtrlPBuffer<CR>
+map <C-c-b> <ESC>:CtrlPBuffer<CR>
 let g:ctrlp_max_height = 30
 set wildignore+=*.pyc
 set wildignore+=*_build/*
