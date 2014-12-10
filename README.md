@@ -17,3 +17,4 @@ Plugins I'm using:
 * syntastic
 * vim-powerline
 * vim-virtualenv
+* tmux-navigator
