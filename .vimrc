@@ -157,3 +157,6 @@ let g:pymode_folding = 0
 
 " NERDtree
 map <leader>t :NERDTreeToggle<CR>
+
+" NERDcommenter
+let g:NERDSpaceDelims = 1
