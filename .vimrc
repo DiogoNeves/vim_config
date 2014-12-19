@@ -68,7 +68,7 @@ if &t_Co > 2 || has("gui_running")
     " switch syntax highlighting on, when the terminal has colors
     syntax on
 endif
-highlight ColorColumn ctermbg=233
+highlight ColorColumn ctermbg=DarkGrey
 
 
 " Code completion and identation
@@ -136,8 +136,11 @@ let g:pymode_doc = 0
 
 " Linting
 let g:pymode_lint = 1
+let g:pymode_lint_checkers=['pyflakes', 'pep8', 'mccabe']
 " Auto check on save
 let g:pymode_lint_write = 1
+" Check always
+let g:pymode_lint_unmodified = 1
 
 " Support virtualenv (using virtualenv plugin)
 let g:pymode_virtualenv = 0
