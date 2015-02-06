@@ -136,11 +136,13 @@ let g:pymode_doc = 0
 
 " Linting
 let g:pymode_lint = 1
-let g:pymode_lint_checkers=['pyflakes', 'pep8', 'mccabe']
+let g:pymode_lint_checkers=['pylint', 'pyflakes', 'pep8']
 " Auto check on save
 let g:pymode_lint_write = 1
 " Check always
 let g:pymode_lint_unmodified = 1
+" Ingore list
+let g:pymode_lint_ignore = 'C0111,I0011'
 
 " Support virtualenv (using virtualenv plugin)
 let g:pymode_virtualenv = 0
